@@ -22,6 +22,9 @@ class Counter extends Component {
 
   handlePlusButton = () => {
     this.setState({count: this.state.count + 1})
+  }
+
+  handlePlusButton = () => {
     this.setState({count: this.state.count - 1})
   }
   render() {

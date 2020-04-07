@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux'
-import { provider } from 'react-redux'
+import { Provider } from 'react-redux'
 
 import './index.css';
 import reducer from './reducers'
-import App from './component/App';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import Provider from 'react-redux/lib/components/Provider';
 
 
 const store = createStore(reducer)
@@ -16,7 +14,7 @@ const store = createStore(reducer)
 ReactDOM.render(
   <Provider store={store}>
     <App />
-  </Provider>
+  </Provider>,
   document.getElementById('root')
 );
 
